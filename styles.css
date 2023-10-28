@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+  --primary-color: #020910;
+  --secondary-color: #58087d;
+  --font-color: #d6d6d6;
+  --font-family: "Poppins", sans-serif;
+  --btn-color: #8746a0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--primary-color);
+  background-image: linear-gradient(135deg, #0a0012 0%, #040113 100%);
+
+  opacity: 0.8;
+  font-family: var(--font-family);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-color);
+
+  /* background-image: linear-gradient(135deg, #170127 0%, #040113 100%); */
+}
+
+.header h1 {
+    padding: 1.2em 2em 1.5em 3em;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2em;
+  padding: 2.5rem;
+}
+
+.hero {
+  padding: 4em;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  color: var(--font-color);
+}
+
+.hero img {
+  width: 480px;
+  height: auto;
+  animation: fadeInAndScale 7s ease infinite;
+}
+
+.hero-txt {
+  padding-left: 2em;
+  width: 100%;
+}
+.hero h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: var(--btn-color);
+}
+.hero h1 {
+  font-size: 3em;
+}
+.latest-work-btn {
+  padding: 1em;
+  width: 120px;
+  border: 2px solid;
+  border-radius: 8px;
+  color: var(--font-color);
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
+.contact-btn {
+  margin-left: 1em;
+  margin-top: 3em;
+  padding: 1em;
+  width: 120px;
+  border: none;
+  border-radius: 8px;
+  color: var(--font-color);
+  font-weight: bold;
+  background-color: var(--btn-color);
+}
+
+.latest-work-btn:hover {
+  animation: fadeInAndScale 1s ease-in-out;
+}
+.contact-btn:hover {
+  animation: fadeInAndScale 1s ease-in-out;
+}
+
+/* skills */
+
+
+/* animations */
+@keyframes fadeInAndScale {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 2;
+  }
+}
