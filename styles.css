@@ -51,8 +51,9 @@ body {
 .hero {
   padding: 4em;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 20px;
   display: flex;
+  align-items: center;
   color: var(--font-color);
 }
 
@@ -74,6 +75,9 @@ body {
 }
 .hero h1 {
   font-size: 3em;
+}
+.hero span{
+  color: var(--btn-color);
 }
 .latest-work-btn {
   padding: 1em;
